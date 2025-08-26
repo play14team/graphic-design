@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { base } from '$app/paths'
+  
   export let showGuidelines = false
   export let showDownloads = false
 
@@ -12,29 +14,29 @@
   const logoVariations = [
     {
       name: 'Primary Logo - Black on White',
-      file: '/logos/play14_black_bg_full.png',
-      fallback: '/logos/play14_black_bg_full.svg',
+      file: `${base}/logos/play14_black_bg_full.png`,
+      fallback: `${base}/logos/play14_black_bg_full.svg`,
       background: 'white',
       description: 'Default logo for light backgrounds',
     },
     {
       name: 'Primary Logo - White on Black',
-      file: '/logos/play14_white_bg_full.png',
-      fallback: '/logos/play14_white_bg_full.svg',
+      file: `${base}/logos/play14_white_bg_full.png`,
+      fallback: `${base}/logos/play14_white_bg_full.svg`,
       background: '#1a1a1a',
       description: 'For dark backgrounds',
     },
     {
       name: 'Transparent Background - White',
-      file: '/logos/play14_white_bg_transparent.png',
-      fallback: '/logos/play14_white_bg_transparent.svg',
+      file: `${base}/logos/play14_white_bg_transparent.png`,
+      fallback: `${base}/logos/play14_white_bg_transparent.svg`,
       background: '#e8e8e8',
       description: 'For use on light backgrounds',
     },
     {
       name: 'Transparent Background - Black',
-      file: '/logos/play14_black_bg_transparent.png',
-      fallback: '/logos/play14_black_bg_transparent.svg',
+      file: `${base}/logos/play14_black_bg_transparent.png`,
+      fallback: `${base}/logos/play14_black_bg_transparent.svg`,
       background: '#4a5568',
       description: 'For use on dark or colored backgrounds',
     },
@@ -42,8 +44,8 @@
 
   const anniversaryLogo = {
     name: '10th Anniversary Edition',
-    file: '/logos/play14_10th_anniversary.png',
-    fallback: '/logos/play14_10th_anniversary.png',
+    file: `${base}/logos/play14_10th_anniversary.png`,
+    fallback: `${base}/logos/play14_10th_anniversary.png`,
     background: '#2d3748',
     description: 'Special anniversary edition with celebratory design',
   }
