@@ -38,12 +38,16 @@ Place the chosen file from `logo/SVG/` in the web build and reference it in HTML
 
 ## Color palette
 
-The `colors/` folder contains swatches and a `Colors.txt` file with palette details. If `Colors.txt` is missing current hex/RGB/CMYK numbers, open `colors/Colors.docx` or contact the brand owner to confirm exact values.
+The `colors/` folder contains swatches and a `Colors.txt` or `colors/Colors.docx`  files with palette details. 
 
-Assumption: this repo includes PNG swatches only; verify exact hex/CSS variables before publishing. Example recommendation (replace with exact values from `Colors.txt`):
-
-- Primary blue: use the largest blue swatch file in `colors/`
-- Accent colors: green, orange, red, yellow, gray (each present as PNGs)
+```
+#D80000 #	Red
+#FF5200 p	Orange
+#FFC900 l	Yellow
+#92C900 a	Green
+#0098DD y	Blue
+#393939 14	Gray
+```
 
 ## Fonts
 
