@@ -16,6 +16,13 @@ const config: StorybookConfig = {
     "name": "@storybook/sveltekit",
     "options": {}
   },
-  "staticDirs": ["../static"]
+  "staticDirs": [{from: "../static", to: "/"}],
+  viteFinal: async (config) => {
+    // Set base path for GitHub Pages
+    if (process.env.NODE_ENV === 'production') {
+      config.base = '/graphic-design/';
+    }
+    return config;
+  }
 };
 export default config;

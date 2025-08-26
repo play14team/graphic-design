@@ -41,6 +41,8 @@ jobs:
 
       - name: Build Storybook
         working-directory: ./storybook
+        env:
+          NODE_ENV: production
         run: pnpm build-storybook
 
       - name: Upload artifact
